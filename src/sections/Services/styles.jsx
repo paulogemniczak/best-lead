@@ -44,6 +44,7 @@ export const Button = styled.button`
     text-transform: uppercase;
     width: 100%;
     max-width: 400px;
+    min-height: 44px;
     border: none;
     background-color: ${theme.colors.primary};
     border-radius: ${theme.border.radius};
