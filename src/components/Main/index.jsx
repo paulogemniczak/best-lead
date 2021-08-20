@@ -19,10 +19,10 @@ export default function Main() {
           <About />
         </S.Section>
         <S.Section>
-          <AskedQuestions />
+          <Plans />
         </S.Section>
         <S.Section>
-          <Plans />
+          <AskedQuestions />
         </S.Section>
       </Container>
       <Contact />
