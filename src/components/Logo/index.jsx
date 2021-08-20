@@ -29,7 +29,7 @@ const Logo = () => {
                   data-name="Best Lead"
                   transform="translate(0.284 127.019)"
                   fontSize="124"
-                  fontFamily="OpenSans-Bold, Open Sans"
+                  fontFamily="SansSerif-Bold, sans-serif"
                   fontWeight="700"
                 >
                   <tspan x="0" y="0">

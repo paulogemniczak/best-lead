@@ -30,16 +30,25 @@ const GlobalStyles = createGlobalStyle `
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: local('Open Sans Bold'), local('Open-Sans-Bold'),
+    src: local('OpenSans Bold'), local('OpenSans-Bold'),
         url('/fonts/open-sans-v23-latin-700.woff2') format('woff2'),
   }
+
   @font-face {
   font-family: 'PT Mono';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-display: swap;
-  src: local('PT Mono Regular'), local('PT-Mono-Regular'),
+  src: local('PTMono Bold'), local('PTMono-Bold'),
        url('/fonts/pt-mono-v8-latin-regular.woff2') format('woff2'),
+}
+@font-face {
+  font-family: 'PT Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('/fonts/pt-mono-v8-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('/fonts/pt-mono-v8-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
     * {
@@ -57,9 +66,7 @@ const GlobalStyles = createGlobalStyle `
       }
 
       body {
-        font-family: ${
-        theme.font.family
-    };
+        font-family: ${theme.font.family};
         font-size: ${
         theme.font.sizes.medium
     };

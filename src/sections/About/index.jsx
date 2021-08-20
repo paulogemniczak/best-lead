@@ -8,6 +8,24 @@ import Youtube1 from "../../../public/img/youtube1.png";
 import Youtube2 from "../../../public/img/youtube2.png";
 import Youtube3 from "../../../public/img/youtube3.png";
 import Youtube4 from "../../../public/img/youtube4.png";
+import { motion } from "framer-motion";
+
+const easing = [0.6, -0.5, 0.01, 0.99];
+
+const fadeInUp = {
+  initial: {
+    y: 60,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.6,
+      ease: easing,
+    },
+  },
+};
 
 const About = () => {
   const [videoIsOpen, setVideoIsOpen] = useState(false);
@@ -21,7 +39,7 @@ const About = () => {
   }
 
   return (
-    <>
+    <motion.div initial="initial" animate="animate">
       <React.Fragment>
         <ModalVideo
           channel="youtube"
@@ -37,63 +55,71 @@ const About = () => {
       </Row>
       <Row className="mt-5 d-flex align-items-stretch">
         <Col sm={12} md={12} lg={3} xl={3} xxl={3} className="my-5 text-center">
-          <S.ImageContent onClick={(e) => openVideo(e, "StHbpE3wllM")}>
-            <GoPlay size={42}  />
-            <Image
-              layout="intrinsic"
-              placeholder="blur"
-              src={Youtube1}
-              alt="Thumbnail Youtube video 1"
-            />
-          </S.ImageContent>
-          <p style={{ color: "#4c5166" }} className="mt-2">
-            1. Realize seu cadastro.
-          </p>
+          <motion.div variants={fadeInUp}>
+            <S.ImageContent onClick={(e) => openVideo(e, "StHbpE3wllM")}>
+              <GoPlay size={42} />
+              <Image
+                layout="intrinsic"
+                placeholder="blur"
+                src={Youtube1}
+                alt="Thumbnail Youtube video 1"
+              />
+            </S.ImageContent>
+            <p style={{ color: "#4c5166" }} className="mt-2">
+              1. Realize seu cadastro.
+            </p>
+          </motion.div>
         </Col>
         <Col sm={12} md={12} lg={3} xl={3} xxl={3} className="my-5 text-center">
-          <S.ImageContent >
-            <GoPlay size={42} onClick={(e) => openVideo(e, "T604XBxZP_A")}/>
-            <Image
-              layout="intrinsic"
-              placeholder="blur"
-              src={Youtube2}
-              alt="Thumbnail Youtube video 2"
-            />
-          </S.ImageContent>
-          <p style={{ color: "#4c5166" }} className="mt-2">
-            2. Acesse a plataforma.
-          </p>
+          <motion.div variants={fadeInUp}>
+            <S.ImageContent>
+              <GoPlay size={42} onClick={(e) => openVideo(e, "T604XBxZP_A")} />
+              <Image
+                layout="intrinsic"
+                placeholder="blur"
+                src={Youtube2}
+                alt="Thumbnail Youtube video 2"
+              />
+            </S.ImageContent>
+            <p style={{ color: "#4c5166" }} className="mt-2">
+              2. Acesse a plataforma.
+            </p>
+          </motion.div>
         </Col>
         <Col sm={12} md={12} lg={3} xl={3} xxl={3} className="my-5 text-center">
-          <S.ImageContent onClick={(e) => openVideo(e, "mgKSQbsdN5o")}>
-            <GoPlay size={42} />
-            <Image
-              layout="intrinsic"
-              placeholder="blur"
-              src={Youtube3}
-              alt="Thumbnail Youtube video 3"
-            />
-          </S.ImageContent>
-          <p style={{ color: "#4c5166" }} className="mt-2">
-            3. Avalie a seleção efetuada.
-          </p>
+          <motion.div variants={fadeInUp}>
+            <S.ImageContent onClick={(e) => openVideo(e, "mgKSQbsdN5o")}>
+              <GoPlay size={42} />
+              <Image
+                layout="intrinsic"
+                placeholder="blur"
+                src={Youtube3}
+                alt="Thumbnail Youtube video 3"
+              />
+            </S.ImageContent>
+            <p style={{ color: "#4c5166" }} className="mt-2">
+              3. Avalie a seleção efetuada.
+            </p>
+          </motion.div>
         </Col>
         <Col sm={12} md={12} lg={3} xl={3} xxl={3} className="my-5 text-center">
-          <S.ImageContent onClick={(e) => openVideo(e, "KVyHsvi2Jng")}>
-            <GoPlay size={42} />
-            <Image
-              layout="intrinsic"
-              placeholder="blur"
-              src={Youtube4}
-              alt="Thumbnail Youtube video 4"
-            />
-          </S.ImageContent>
-          <p style={{ color: "#4c5166" }} className="mt-2">
-            4. Exporte sua lista de contatos.
-          </p>
+          <motion.div variants={fadeInUp}>
+            <S.ImageContent onClick={(e) => openVideo(e, "KVyHsvi2Jng")}>
+              <GoPlay size={42} />
+              <Image
+                layout="intrinsic"
+                placeholder="blur"
+                src={Youtube4}
+                alt="Thumbnail Youtube video 4"
+              />
+            </S.ImageContent>
+            <p style={{ color: "#4c5166" }} className="mt-2">
+              4. Exporte sua lista de contatos.
+            </p>
+          </motion.div>
         </Col>
       </Row>
-    </>
+    </motion.div>
   );
 };
 
