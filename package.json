@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "generate": "yarn plop --plopfile ./generators/plopfile.js"
+    "generate": "yarn plop --plopfile ./generators/plopfile.js",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "bootstrap": "^5.1.0",
@@ -15,6 +16,7 @@
     "next": "11.1.0",
     "next-compose-plugins": "^2.2.1",
     "next-pwa": "^5.3.1",
+    "next-sitemap": "^1.6.162",
     "react": "17.0.2",
     "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-bootstrap": "^2.0.0-beta.5",
