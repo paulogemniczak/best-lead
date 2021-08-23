@@ -30,7 +30,7 @@ export default class CustomDocument extends Document {
 
   render() {
     return (
-      <Html lang="en-US">
+      <Html lang="pt-BR">
         <Head />
         <body>
           <Main />
