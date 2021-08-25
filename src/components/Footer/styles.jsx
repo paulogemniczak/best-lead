@@ -9,5 +9,9 @@ export const Wrapper = styled.div`
    p {
      color: white;
      font-size: 13px;
+     a {
+       cursor: pointer;
+       text-decoration: underline !important;
+     }
    }
 `;

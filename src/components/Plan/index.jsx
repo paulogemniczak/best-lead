@@ -24,7 +24,7 @@ const Plan = ({
     } else {
       return (
         <S.Price className="d-flex justify-content-center align-items-center">
-          <h3 style={{fontSize: '32px', color: '#4c5166', fontWeight: 'bold'}}>Custom</h3>
+          <h3 style={{fontSize: '32px', color: '#4c5166', fontWeight: 'bold'}}>Sob demanda</h3>
         </S.Price>
       );
     }
