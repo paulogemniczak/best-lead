@@ -5,10 +5,10 @@ const SocialMedia = () => {
   return (
     <S.Wrapper className="mt-5">
       <S.Media href="https://www.instagram.com/bestleadoficial/" target="_blank" rel="noreferrer">
-        <RiInstagramLine size={32} />
+        <RiInstagramLine title="Instagram icon" size={32} />
       </S.Media>
       <S.Media href="https://www.facebook.com/bestleadoficial" target="_blank" className="ms-3" rel="noreferrer">
-        <RiFacebookFill size={32} />
+        <RiFacebookFill title="Facebook icon" size={32} />
       </S.Media>
     </S.Wrapper>
   );
