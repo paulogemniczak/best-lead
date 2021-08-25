@@ -29,7 +29,7 @@ export const TextPrimary = styled.span`
     font-size: min(40px, 8vw) !important;
   }
 `;
-export const Subtitle = styled.h4`
+export const Subtitle = styled.h2`
   ${({ theme }) => css`
     color: ${theme.colors.gray};
     font-size: ${theme.font.sizes.xlarge};

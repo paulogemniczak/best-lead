@@ -1,5 +1,6 @@
 import React from "react";
 import Head from "next/head";
+import { GA_TRACKING_ID } from "../../../lib/gtag";
 
 export default function SEO({
   description = "Encontre e gere seus leads automaticamente. Tenha acesso à todas empresas do mercado pelo menor preço.",
@@ -53,6 +54,22 @@ export default function SEO({
   return (
     <Head>
       <title>{title}</title>
+      <script
+        async
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+      />
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
       <link rel="shortcut icon" href="/img/icon-512.png" />
       <link rel="apple-touch-icon" href="/img/icon-192.png" />
       <link rel="manifest" href="/manifest.json" />
