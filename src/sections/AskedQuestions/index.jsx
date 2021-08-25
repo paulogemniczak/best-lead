@@ -9,7 +9,7 @@ const questions = [
   {
     question: "Quais são as fontes de dados utilizadas pela Best Lead?",
     answer:
-      "Atualmente utilizamos a base pública da Receita Federal do Brasil.",
+      "Atualmente utilizamos a base de dados públicos da Receita Federal.",
   },
   {
     question: "Qual a periodicidade de atualização das informações?",
@@ -24,7 +24,7 @@ const questions = [
   {
     question: "Há fidelização na contratação do serviço?",
     answer:
-      "A Lei Geral de Proteção de Dados (LGPD) prevê normas para o fornecimento e o tratamento de dados pessoais (Pessoa Física), exclusivamente. A Best Lead fornece lista de contatos contendo dados corporativos públicos abertos do Governo Federal, logo, quem contrata nosso serviço está em conformidade com a LGPD.",
+      "Neste momento não estamos trabalhando com fidelização em nossos planos.",
   },
   {
     question: "É exigida um contratação mínima mensal?",
