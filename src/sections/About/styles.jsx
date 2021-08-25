@@ -45,8 +45,8 @@ export const ImageContent = styled.div`
     cursor: pointer;
 
     svg {
-      transition: opacity .5s ease-in-out;
-      opacity: .5;
+      transition: opacity 0.5s ease-in-out;
+      opacity: 0.5;
       z-index: 1;
       position: absolute;
       top: 50%;
@@ -61,4 +61,7 @@ export const ImageContent = styled.div`
       }
     }
   `}
+`;
+export const VideoTitle = styled.p`
+  color: #4c5166;
 `;

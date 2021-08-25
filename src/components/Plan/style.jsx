@@ -30,6 +30,11 @@ export const Price = styled.div`
     text-align: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.084);
   `}
+  .on-demand {
+    font-size: 32px;
+    color: #4c5166;
+    font-weight: bold;
+  }
 `;
 export const Currency = styled.span`
   position: relative;

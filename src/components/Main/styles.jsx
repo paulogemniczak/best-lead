@@ -8,6 +8,9 @@ export const Section = styled.section`
     justify-content: center;
     align-items: center;
   `}
+  .first-section {
+    margin-top: 92px;
+  }
 `;
 
 export const Title = styled.h3`

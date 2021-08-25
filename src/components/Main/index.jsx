@@ -12,7 +12,7 @@ export default function Main() {
   return (
     <>
       <Container>
-        <S.Section style={{ marginTop: "92px" }}>
+        <S.Section className="first-section">
           <Services />
         </S.Section>
         <S.Section>

@@ -65,9 +65,9 @@ const About = () => {
                 alt="Thumbnail Youtube video 1"
               />
             </S.ImageContent>
-            <p style={{ color: "#4c5166" }} className="mt-2">
+            <S.VideoTitle className="mt-2">
               1. Realize seu cadastro.
-            </p>
+            </S.VideoTitle>
           </motion.div>
         </Col>
         <Col sm={12} md={12} lg={3} xl={3} xxl={3} className="my-5 text-center">
@@ -81,9 +81,9 @@ const About = () => {
                 alt="Thumbnail Youtube video 2"
               />
             </S.ImageContent>
-            <p style={{ color: "#4c5166" }} className="mt-2">
+            <S.VideoTitle className="mt-2">
               2. Acesse a plataforma.
-            </p>
+            </S.VideoTitle>
           </motion.div>
         </Col>
         <Col sm={12} md={12} lg={3} xl={3} xxl={3} className="my-5 text-center">
@@ -97,9 +97,9 @@ const About = () => {
                 alt="Thumbnail Youtube video 3"
               />
             </S.ImageContent>
-            <p style={{ color: "#4c5166" }} className="mt-2">
+            <S.VideoTitle className="mt-2">
               3. Avalie a seleção efetuada.
-            </p>
+            </S.VideoTitle>
           </motion.div>
         </Col>
         <Col sm={12} md={12} lg={3} xl={3} xxl={3} className="my-5 text-center">
@@ -113,9 +113,9 @@ const About = () => {
                 alt="Thumbnail Youtube video 4"
               />
             </S.ImageContent>
-            <p style={{ color: "#4c5166" }} className="mt-2">
+            <S.VideoTitle className="mt-2">
               4. Exporte sua lista de contatos.
-            </p>
+            </S.VideoTitle>
           </motion.div>
         </Col>
       </Row>

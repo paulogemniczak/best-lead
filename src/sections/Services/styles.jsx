@@ -10,7 +10,7 @@ export const Section = styled.section`
   `}
 `;
 
-export const Title = styled.h3`
+export const Title = styled.h1`
   ${({ theme }) => css`
     color: ${theme.colors.secondary};
     font-size: 40px;
