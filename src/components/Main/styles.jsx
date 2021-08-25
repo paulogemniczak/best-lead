@@ -8,8 +8,8 @@ export const Section = styled.section`
     justify-content: center;
     align-items: center;
   `}
-  .first-section {
-    margin-top: 92px;
+  &.first-section {
+    margin-top: 92px !important;
   }
 `;
 
