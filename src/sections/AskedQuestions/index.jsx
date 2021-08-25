@@ -27,7 +27,7 @@ const questions = [
       "Neste momento não estamos trabalhando com fidelização em nossos planos.",
   },
   {
-    question: "É exigida um contratação mínima mensal?",
+    question: "É exigida uma contratação mínima mensal?",
     answer:
       "Na Best Lead você contrata o plano que melhor atende o seu orçamento e necessidade.",
   },
