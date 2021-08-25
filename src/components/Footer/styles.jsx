@@ -12,6 +12,7 @@ export const Wrapper = styled.div`
      a {
        cursor: pointer;
        text-decoration: underline !important;
+       color: white;
        &:visited,
        &:active {
         color: white;
