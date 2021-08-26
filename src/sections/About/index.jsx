@@ -27,9 +27,36 @@ const fadeInUp = {
   },
 };
 
+const videoData = [
+  {
+    videoId: "ZP_2ZDWY67w",
+    videoImageSource: Youtube1,
+    videoAlt: "Thumbnail Youtube video 1",
+    videoTitle: "1. Realize seu cadastro.",
+  },
+  {
+    videoId: "tQ9-S9aPgVI",
+    videoImageSource: Youtube2,
+    videoAlt: "Thumbnail Youtube video 2",
+    videoTitle: "2. Acesse a plataforma.",
+  },
+  {
+    videoId: "mgKSQbsdN5o",
+    videoImageSource: Youtube3,
+    videoAlt: "Thumbnail Youtube video 3",
+    videoTitle: "3. Avalie a seleção efetuada.",
+  },
+  {
+    videoId: "KVyHsvi2Jng",
+    videoImageSource: Youtube4,
+    videoAlt: "Thumbnail Youtube video 4",
+    videoTitle: "4. Exporte sua lista de contatos.",
+  },
+];
+
 const About = () => {
   const [videoIsOpen, setVideoIsOpen] = useState(false);
-  const [videoId, setVideoId] = useState("T604XBxZP_A");
+  const [videoId, setVideoId] = useState("ZP_2ZDWY67w");
 
   async function openVideo(e, videoIdSelected) {
     e.preventDefault();
@@ -54,70 +81,24 @@ const About = () => {
         <S.Line />
       </Row>
       <Row className="mt-5 d-flex align-items-stretch">
-        <Col sm={12} md={12} lg={3} xl={3} xxl={3} className="my-5 text-center">
-          <motion.div variants={fadeInUp}>
-            <S.ImageContent onClick={(e) => openVideo(e, "StHbpE3wllM")}>
-              <GoPlay size={42} />
-              <Image
-                layout="intrinsic"
-                placeholder="blur"
-                src={Youtube1}
-                alt="Thumbnail Youtube video 1"
-              />
-            </S.ImageContent>
-            <S.VideoTitle className="mt-2">
-              1. Realize seu cadastro.
-            </S.VideoTitle>
-          </motion.div>
-        </Col>
-        <Col sm={12} md={12} lg={3} xl={3} xxl={3} className="my-5 text-center">
-          <motion.div variants={fadeInUp}>
-            <S.ImageContent>
-              <GoPlay size={42} onClick={(e) => openVideo(e, "T604XBxZP_A")} />
-              <Image
-                layout="intrinsic"
-                placeholder="blur"
-                src={Youtube2}
-                alt="Thumbnail Youtube video 2"
-              />
-            </S.ImageContent>
-            <S.VideoTitle className="mt-2">
-              2. Acesse a plataforma.
-            </S.VideoTitle>
-          </motion.div>
-        </Col>
-        <Col sm={12} md={12} lg={3} xl={3} xxl={3} className="my-5 text-center">
-          <motion.div variants={fadeInUp}>
-            <S.ImageContent onClick={(e) => openVideo(e, "mgKSQbsdN5o")}>
-              <GoPlay size={42} />
-              <Image
-                layout="intrinsic"
-                placeholder="blur"
-                src={Youtube3}
-                alt="Thumbnail Youtube video 3"
-              />
-            </S.ImageContent>
-            <S.VideoTitle className="mt-2">
-              3. Avalie a seleção efetuada.
-            </S.VideoTitle>
-          </motion.div>
-        </Col>
-        <Col sm={12} md={12} lg={3} xl={3} xxl={3} className="my-5 text-center">
-          <motion.div variants={fadeInUp}>
-            <S.ImageContent onClick={(e) => openVideo(e, "KVyHsvi2Jng")}>
-              <GoPlay size={42} />
-              <Image
-                layout="intrinsic"
-                placeholder="blur"
-                src={Youtube4}
-                alt="Thumbnail Youtube video 4"
-              />
-            </S.ImageContent>
-            <S.VideoTitle className="mt-2">
-              4. Exporte sua lista de contatos.
-            </S.VideoTitle>
-          </motion.div>
-        </Col>
+        {videoData.map((v, i) => (
+          <Col key={i} sm={12} md={12} lg={3} xl={3} xxl={3} className="my-5 text-center">
+            <motion.div variants={fadeInUp}>
+              <S.ImageContent onClick={(e) => openVideo(e, v.videoId)}>
+                <GoPlay size={42} />
+                <Image
+                  layout="intrinsic"
+                  placeholder="blur"
+                  src={v.videoImageSource}
+                  alt={v.videoAlt}
+                />
+              </S.ImageContent>
+              <S.VideoTitle className="mt-2">
+                {v.videoTitle}
+              </S.VideoTitle>
+            </motion.div>
+          </Col>
+        ))}
       </Row>
     </motion.div>
   );
