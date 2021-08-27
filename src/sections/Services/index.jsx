@@ -70,7 +70,7 @@ const Services = () => {
       <Row className="justify-content-center mt-4">
         <S.Button
           onClick={() =>
-            window.open("https://bestleadwebapp.azurewebsites.net/", "_blank")
+            window.open("https://app.bestlead.com.br/", "_blank")
           }
           className="outline"
         >

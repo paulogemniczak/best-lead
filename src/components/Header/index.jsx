@@ -8,7 +8,7 @@ export default function Header() {
       <S.Nav>
         <ul>
           <li>
-            <a onClick={() => window.open("https://bestleadwebapp.azurewebsites.net/", "_blank")} >Login</a>
+            <a onClick={() => window.open("https://app.bestlead.com.br/", "_blank")} >Login</a>
           </li>
         </ul>
       </S.Nav>

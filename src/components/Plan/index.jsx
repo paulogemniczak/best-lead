@@ -32,7 +32,7 @@ const Plan = ({
 
   function eventClick(index) {
     if (index == 0) {
-      window.open("https://bestleadwebapp.azurewebsites.net/", "_blank")
+      window.open("https://app.bestlead.com.br/", "_blank")
     } else {
       window.open("https://api.whatsapp.com/send?phone=5541992238152", "_blank");
     }
